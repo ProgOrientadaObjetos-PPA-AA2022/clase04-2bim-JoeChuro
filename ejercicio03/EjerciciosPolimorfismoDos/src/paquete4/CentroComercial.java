@@ -7,6 +7,7 @@ package paquete4;
 
 import java.util.ArrayList;
 import paquete2.Arriendo;
+import paquete2.Propietario;
 
 /**
  *

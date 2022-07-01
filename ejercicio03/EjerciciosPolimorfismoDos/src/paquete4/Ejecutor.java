@@ -10,6 +10,7 @@ import paquete2.Arriendo;
 import paquete3.ArriendoLocalComercial;
 import paquete3.ArriendoLocalComida;
 import paquete3.ArriendoLocalSesiones;
+import paquete2.Propietario;
 
 public class Ejecutor {
     public static void main(String[] args) {
@@ -22,8 +23,8 @@ public class Ejecutor {
         arriendoComida.establecerValorAgua(20.2); // en $
         arriendoComida.establecerValorLuz(40.2); // en $
         
-        ArriendoLocalComercial arriendoComercial = new ArriendoLocalComercial(
-                "Andrew Schroeder", 400);
+        Propietario p = new Propietario("Andrew", "Schroeder", 30);
+        ArriendoLocalComercial arriendoComercial = new ArriendoLocalComercial(p, 400);
         arriendoComercial.establecerValorAdicionalFijo(100); // en $
         
         ArriendoLocalSesiones arriendoSesiones = new ArriendoLocalSesiones(

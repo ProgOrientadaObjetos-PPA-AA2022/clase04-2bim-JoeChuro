@@ -15,6 +15,11 @@ public class ArriendoLocalComida extends Arriendo {
     private double valorAgua;
     private double iva;
     
+    @Override
+    public void establecerNombreArrendatario(String nombre) {
+        nombreArrendatario = nombre.toLowerCase();
+    }
+    
     public ArriendoLocalComida(String nombre, double cuotaB){
         super(nombre, cuotaB);
     }
